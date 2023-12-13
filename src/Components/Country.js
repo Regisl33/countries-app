@@ -7,7 +7,7 @@ const Country = ({ country }) => {
       <div className="country-infos">
         <h2>{country.name.common}</h2>
         <h3>{country.capital}</h3>
-        <p>Pop. {country.population}</p>
+        <p>Pop. {country.population.toLocaleString().replaceAll(",", " ")}</p>
       </div>
     </div>
   );

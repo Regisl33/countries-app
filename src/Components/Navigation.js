@@ -5,16 +5,25 @@ const Navigation = () => {
   return (
     <nav>
       <ul>
-        <NavLink to={"/"}>
+        <NavLink to={"/"} className={(nav) => (nav.isActive ? "active" : "")}>
           <li>Home</li>
         </NavLink>
-        <NavLink to={"/display"}>
+        <NavLink
+          to={"/display"}
+          className={(nav) => (nav.isActive ? "active" : "")}
+        >
           <li>Countries</li>
         </NavLink>
-        <NavLink to={"/table"}>
+        <NavLink
+          to={"/table"}
+          className={(nav) => (nav.isActive ? "active" : "")}
+        >
           <li>Countries Table</li>
         </NavLink>
-        <NavLink to={"/Search"}>
+        <NavLink
+          to={"/Search"}
+          className={(nav) => (nav.isActive ? "active" : "")}
+        >
           <li>Search</li>
         </NavLink>
       </ul>
