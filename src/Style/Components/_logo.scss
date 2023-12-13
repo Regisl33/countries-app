@@ -1,0 +1,13 @@
+.logo{
+  @include justify(space-around);
+  background: $color3;
+  color: $color2;
+  width: 500px;
+  margin: 25px auto;
+  border-radius: 25px;
+
+  img{
+    width: 75px;
+  }
+
+}
