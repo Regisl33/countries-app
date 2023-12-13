@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import { ContextCountriesData } from "./Contexts/ContextCountriesData";
 import CountriesDisplay from "./Pages/CountriesDisplay";
+import CountriesTable from "./Pages/CountriesTable";
+import SearchDisplay from "./Pages/SearchDisplay";
 
 const App = () => {
   const [countriesData, setCountriesData] = useState([]);
@@ -19,6 +21,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/display" element={<CountriesDisplay />} />
+          <Route path="/table" element={<CountriesTable />} />
+          <Route path="/search" element={<SearchDisplay />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </ContextCountriesData.Provider>
     </BrowserRouter>

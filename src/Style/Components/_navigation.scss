@@ -1,0 +1,19 @@
+nav {
+  a,
+  a:visited {
+    text-decoration: none;
+    color: $color4;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    @include justify(flex-start);
+    list-style: none;
+    margin-left: 15px;
+
+    li {
+      padding: 25px;
+    }
+  }
+}
