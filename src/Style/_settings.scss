@@ -7,6 +7,7 @@ $color1: rgb(39, 39, 39);
 $color2: rgb(243, 243, 243);
 $color3: rgb(70, 70, 70);
 $color4: rgb(23, 63, 244);
+$color5: rgb(237, 23, 244);
 
 @mixin justify($content) {
   display: flex;
@@ -14,9 +15,13 @@ $color4: rgb(23, 63, 244);
   align-items: center;
 }
 
-@keyframes navbarEffect{
-  0%{transform: scale(0%);}
-  100%{transform: scale(100%);}
+@keyframes navbarEffect {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
 }
 
 * {

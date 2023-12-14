@@ -1,6 +1,20 @@
 .countries-table {
-  img {
-    width: 25px;
-    height: 25px;
+  table {
+    margin: 2%;
+
+    th,
+    td {
+      padding: 5px;
+    }
+    th {
+      font-size: 1.1rem;
+      font-weight: bold;
+      background: $color4;
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
