@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
 import { ContextCountriesData } from "./Contexts/ContextCountriesData";
 import CountriesDisplay from "./Pages/CountriesDisplay";
 import CountriesTable from "./Pages/CountriesTable";
@@ -19,11 +18,10 @@ const App = () => {
     <BrowserRouter>
       <ContextCountriesData.Provider value={countriesData}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/display" element={<CountriesDisplay />} />
+          <Route path="/" element={<CountriesDisplay />} />
           <Route path="/table" element={<CountriesTable />} />
           <Route path="/search" element={<SearchDisplay />} />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<CountriesDisplay />} />
         </Routes>
       </ContextCountriesData.Provider>
     </BrowserRouter>

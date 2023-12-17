@@ -10,8 +10,15 @@ const TableRow = ({ country, counter }) => {
       ? arrayLang.slice(0, 3).join(", ")
       : arrayLang.join(", ");
   };
+
   return (
-    <tr className={counter}>
+    <tr
+      className={counter}
+      style={{
+        background:
+          counter % 2 === 1 ? "rgb(23, 63, 244)" : "rgb(237, 23, 244)",
+      }}
+    >
       <td>{counter}</td>
       <td>
         <img src={country.flags.svg} alt={country.name.common} />
