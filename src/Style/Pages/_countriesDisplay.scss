@@ -2,6 +2,7 @@ main {
   .displayCountries {
     display: flex;
     flex-wrap: wrap;
+    user-select: none;
   }
   .filters {
     display: grid;
@@ -15,6 +16,7 @@ main {
     border-radius: 25px;
     font-size: 1.1rem;
     letter-spacing: 1px;
+    user-select: none;
 
     input[type="text"] {
       border: none;
@@ -44,6 +46,22 @@ main {
         margin: 5px;
         height: 15px;
         width: 15px;
+      }
+    }
+  }
+  .cancel {
+    button {
+      background: $color4;
+      color: $color2;
+      border: 1px solid $color1;
+      border-radius: 30px;
+      padding: 10px 25px;
+      letter-spacing: 1px;
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(105%);
       }
     }
   }
