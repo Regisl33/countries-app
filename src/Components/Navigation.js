@@ -14,12 +14,6 @@ const Navigation = () => {
         >
           <li>Table</li>
         </NavLink>
-        <NavLink
-          to={"/Search"}
-          className={(nav) => (nav.isActive ? "active" : "")}
-        >
-          <li>Search</li>
-        </NavLink>
       </ul>
     </nav>
   );

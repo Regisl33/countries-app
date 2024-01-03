@@ -1,12 +1,8 @@
 import React from "react";
-import Infos from "./Infos";
 
 const Country = ({ country }) => {
-  const handleInfosDisplay = () => {
-    return <Infos country={country} />;
-  };
   return (
-    <div className="country" onClick={handleInfosDisplay}>
+    <div className="country">
       <img src={country.flags.svg} alt={country.flags.alt} />
       <div className="country-infos">
         <h2>{country.name.common}</h2>

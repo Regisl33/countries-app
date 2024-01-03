@@ -25,7 +25,7 @@ const TableRow = ({ country, counter }) => {
       </td>
       <td>{country.name.common}</td>
       <td>{country.capital}</td>
-      <td>{country.population.toLocaleString().replaceAll(",", "")}</td>
+      <td>{country.population.toLocaleString().replaceAll(",", " ")}</td>
       <td>{handleLanguages()}</td>
       <td>{country.continents.join(", ")}</td>
       <td>

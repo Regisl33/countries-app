@@ -1,4 +1,9 @@
 .countries-table {
+  
+  .table-container{
+    @include justify(center);
+  }
+
   table {
     margin: 2%;
 
